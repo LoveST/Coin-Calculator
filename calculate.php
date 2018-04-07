@@ -11,10 +11,11 @@ include "coin_calculator.php";
 // get the required variables
 $weight = $_GET['keyword'];
 $weightType = $_GET['weightType'];
-$calculate = $_GET['calculate'];
+$toCalculate = $_GET['calculate'];
 
 // initiate the Coin Calculator class
-$calc = new Coin_Calculator($weight, $weightType, $calculate);
+use LoveST\Coin_Calculator, LoveST\Weights;
+$calc = new Coin_Calculator($weight, $weightType, $toCalculate);
 
 // get the required variables and set it in the array
 $array = Array(

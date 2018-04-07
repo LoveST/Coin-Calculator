@@ -1,5 +1,7 @@
 <?
 
+namespace LoveST;
+
 class Coin_Calculator
 {
 
@@ -20,10 +22,9 @@ class Coin_Calculator
      * Class constructor
      * @param $coinsWeight => total weight of the coins
      * @param $weightType => the type of the weight, default: Weights::Pounds
-     * @param $calculate => what to calculate => (1 = Quarters)(2 = Dimes)(3 = Nickels)(4 = Peenies)
-     * @return boolean
+     * @param $toCalculate => what to calculate => (1 = Quarters)(2 = Dimes)(3 = Nickels)(4 = Pennies)
      */
-    public function __construct($coinsWeight, $weightType = Weights::POUNDS, $calculate = 1)
+    public function __construct($coinsWeight, $weightType = Weights::POUNDS, $toCalculate = 1)
     {
 
         // set the total weight of the coins
@@ -32,10 +33,10 @@ class Coin_Calculator
         // set the weight type 
         $this->setWeightType($weightType);
 
-        $this->toCalculate = $calculate;
+        $this->toCalculate = $toCalculate;
 
         // calculate the needed type of coins
-        switch ($calculate) {
+        switch ($toCalculate) {
             case 1:
                 $this->calculate(Coin_Calculator::QUARTER, Coin_Calculator::QUARTER_WORTH); // if 1 then calculate quarters
                 break;
@@ -52,7 +53,6 @@ class Coin_Calculator
                 $this->calculate(Coin_Calculator::QUARTER, Coin_Calculator::QUARTER_WORTH); // if anything else then calcualte quarters
                 break;
         }
-        return true;
     }
 
     /**
