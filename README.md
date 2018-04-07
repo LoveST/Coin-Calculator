@@ -2,8 +2,7 @@
 Calculate amount and worth of a certain amount of coins by their weight.
 
 # Supported PHP Versions
-- 5.4+
-- 7.0+
+Versions ```5.4+``` & ```7.0+```
 
 # Supported Coins
 - Quarters
