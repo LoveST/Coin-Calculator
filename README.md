@@ -24,6 +24,8 @@ require "coin_calculator.php";
 $weight = 500; // total weight of the coins
 $weightType = 1; // set 1 for Pounds, 2 for Grams
 $toCalculate = 1; // 1 = Quarters, 2 = Dimes, 3 = Nickles, 4 = Pennies
+
+use LoveST\Coin_Calculator, LoveST\Weights;
 $calc = new Coin_Calculator($weight, $weightType, $toCalculate);
 ```
 - Get the total amount that the coins are worth without formatting
