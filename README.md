@@ -1,20 +1,20 @@
 # Coin-Calculator
 Calculate amount and worth of a certain amount of coins by their weight.
 
-# Supported PHP Versions
+### Supported PHP Versions
 Versions ```5.4+``` & ```7.0+```
 
-# Supported Coins
+### Supported Coins
 - Quarters
 - Dimes
 - Nickles
 - Pennies
 
-# Supported Weights
+### Supported Weights
 - Pounds
 - Grams
 
-# To Use
+### To Use
 - Include the **coin_calculator.php** class.
 ```php
 require "coin_calculator.php";
