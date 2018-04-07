@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Online coins calculator by LoveST Inc.">
+    <title>Coin Calculator</title>
+
+</head>
+<body>
+
+<div class="wrapper-page">
+    <div class="">
+        <h3 class=""><strong class="">Coin Calculator</strong></h3>
+        <h5 class="">Choose the total coins weight and the type of the weight from the list</h5>
+    </div>
+    <form action="" class="" method="post">
+        <div>
+            <input class="form-control" id="keyword" type="number" value="" name="keyword" required="true"
+                   placeholder="Enter weight">
+        </div>
+
+        <div class="">
+            <select id="calculate" name="calculate" class="">
+                <option value="1">Quarters</option>
+                <option value="2">Dimes</option>
+                <option value="3">Nickles</option>
+                <option value="4">Pennies</option>
+            </select>
+        </div>
+        <div>
+            <select id="weightType" name="keyword" class="">
+                <option value="1">Pounds</option>
+                <option value="2">Grams</option>
+            </select>
+        </div>
+
+        <div id="results" hidden="hidden">
+            <h4 class=""><b id="weight">Weight : </b></h4>
+            <h4 class=""><b id="worth">Worth : $</b></h4>
+            <h4 class=""><b id="quantity">Quantity : </b></h4>
+        </div>
+    </form>
+</div>
+
+<!-- jQuery  -->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="auto-complete.js"></script>
+
+</body>
+</html>
