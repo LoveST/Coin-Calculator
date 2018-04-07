@@ -4,7 +4,7 @@ Calculate amount and worth of a certain amount of coins by their weight.
 # To Use
 - Include the **coin_calculator.php** class.
 ```php
-required "coin_calculator.php";
+require "coin_calculator.php";
 ```
 - Initiate the class by passing it the required parameters
 ```php
